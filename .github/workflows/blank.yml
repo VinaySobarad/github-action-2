@@ -1,11 +1,24 @@
 name: workflow-1
 on: workflow_dispatch
 jobs:
-  job-1:
+  job-1-build:
     runs-on: ubuntu-latest
     steps:
-      - name: step-1
-        run: | 
-          echo "Line 1"
-          echo "Line 2"
+      - name: step-1-build
+        run: echo "Step 1 build"
+  
+  job-2-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: step-2-test
+        run: echo "Step 2 Test"
+
+  job-3-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: step-3-deploy
+        run: echo "Step 3 deploy"
+    
+  
+  
     
