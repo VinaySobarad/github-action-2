@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: step-1-build
-        run: echo "Step 1 build - push to main, develop, or release/**"
-  
-
+        run: | 
+          echo "print the variable"
+          echo "print ${{ vars.variable_1 }}"
   
   
     
