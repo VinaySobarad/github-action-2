@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: step-1-build
-        run: echo "Step 1 build - pull request to to main"
+        run: echo "Step 1 build - pull request to to main and only opened pull request"
   
 
   
