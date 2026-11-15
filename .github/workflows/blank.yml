@@ -11,8 +11,8 @@ jobs:
     steps:
       - name: step-1-build
         run: | 
-          echo "print the variable"
-          echo "print ${{ vars.variable_1 }}"
+          echo "print the secret"
+          echo "print ${{ secrets.secret_1 }}"
   
   
     
